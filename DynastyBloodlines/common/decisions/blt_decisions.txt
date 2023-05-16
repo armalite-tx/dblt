@@ -1,0 +1,50 @@
+﻿blt_enable_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_bloodline_tracker.dds"
+	
+	title = blt_enable_decision
+	desc = blt_enable_decision_desc
+	selection_tooltip = blt_enable_decision_tooltip
+	confirm_text = blt_enable_decision_confirm
+
+	is_shown = {
+
+		NOT = {has_character_flag = blt_enabled}
+	}
+
+	is_valid = {
+		NOT = {has_character_flag = blt_enabled}
+	}
+
+	effect = {
+
+		add_character_flag = blt_enabled
+
+	}
+
+	ai_check_frequency = 0 # Change this value if you want the AI to consider this decision.
+}
+
+blt_disable_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	
+	title = blt_disable_decision
+	desc = blt_disable_decision_desc
+	selection_tooltip = blt_disable_decision_tooltip
+	confirm_text = blt_disable_decision_confirm
+
+	is_shown = {
+
+		has_character_flag = blt_enabled
+	}
+
+	is_valid = {
+		has_character_flag = blt_enabled
+	}
+
+	effect = {
+
+		remove_character_flag = blt_enabled
+	}
+
+	ai_check_frequency = 0 # Change this value if you want the AI to consider this decision.
+}

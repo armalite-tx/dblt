@@ -1,0 +1,10 @@
+﻿l_english:
+  blt_enable_decision: "Enable Dynasty Bloodline Tracker"
+  blt_enable_decision_tooltip: "Enables the dynasty bloodline tracker options in the character interaction menus."
+  blt_enable_decision_desc: "Enables the dynasty bloodline tracker options in the character interaction menus."
+  blt_enable_decision_confirm: "Enable Dynasty Bloodline Tracker"
+
+  blt_disable_decision: "Disable Dynasty Bloodline Tracker"
+  blt_disable_decision_tooltip: "Disables the dynasty bloodline tracker options in the character interaction menus."
+  blt_disable_decision_desc: "Disables the dynasty bloodline tracker options in the character interaction menus."
+  blt_disable_decision_confirm: "Disable Dynasty Bloodline Tracker"

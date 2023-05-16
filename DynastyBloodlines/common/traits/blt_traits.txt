@@ -1,0 +1,36 @@
+
+blt_red_blood = {
+	inherit_chance = 100
+}
+
+blt_blue_blood = {
+	inherit_chance = 100
+}
+
+blt_green_blood = {
+	inherit_chance = 100
+}
+
+blt_yellow_blood = {
+	inherit_chance = 100
+}
+
+blt_orange_blood = {
+	inherit_chance = 100
+}
+
+blt_purple_blood = {
+	inherit_chance = 100
+}
+
+blt_gray_blood = {
+	inherit_chance = 100
+}
+
+blt_pink_blood = {
+	inherit_chance = 100
+}
+
+blt_cyan_blood = {
+	inherit_chance = 100
+}

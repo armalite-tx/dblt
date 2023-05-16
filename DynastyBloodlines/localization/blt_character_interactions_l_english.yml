@@ -1,0 +1,54 @@
+﻿l_english:
+ blt_track_bloodline_red_interaction:0 "Assign Red Bloodline Tracker"
+ blt_track_bloodline_red_interaction.desc:0 "Track [recipient.GetShortUINameNoTooltip] descendants."
+ 
+ blt_track_bloodline_orange_interaction:0 "Assign Orange Bloodline Tracker"
+ blt_track_bloodline_orange_interaction.desc:0 "Track [recipient.GetShortUINameNoTooltip] descendants."
+ 
+ blt_track_bloodline_yellow_interaction:0 "Assign Yellow Bloodline Tracker"
+ blt_track_bloodline_yellow_interaction.desc:0 "Track [recipient.GetShortUINameNoTooltip] descendants."
+ 
+ blt_track_bloodline_blue_interaction:0 "Assign Blue Bloodline Tracker"
+ blt_track_bloodline_blue_interaction.desc:0 "Track [recipient.GetShortUINameNoTooltip] descendants."
+
+ blt_track_bloodline_green_interaction:0 "Assign Green Bloodline Tracker"
+ blt_track_bloodline_green_interaction.desc:0 "Track [recipient.GetShortUINameNoTooltip] descendants."
+ 
+ blt_track_bloodline_cyan_interaction:0 "Assign Cyan Bloodline Tracker"
+ blt_track_bloodline_cyan_interaction.desc:0 "Track [recipient.GetShortUINameNoTooltip] descendants."
+
+ blt_track_bloodline_pink_interaction:0 "Assign Pink Bloodline Tracker"
+ blt_track_bloodline_pink_interaction.desc:0 "Track [recipient.GetShortUINameNoTooltip] descendants."
+
+ blt_track_bloodline_purple_interaction:0 "Assign Purple Bloodline Tracker"
+ blt_track_bloodline_purple_interaction.desc:0 "Track [recipient.GetShortUINameNoTooltip] descendants."
+
+ blt_track_bloodline_gray_interaction:0 "Assign Gray Bloodline Tracker"
+ blt_track_bloodline_gray_interaction.desc:0 "Track [recipient.GetShortUINameNoTooltip] descendants."
+
+ blt_remove_bloodline_red_interaction:0 "Remove Red Bloodline Tracker"
+ blt_remove_bloodline_red_interaction.desc:0 "Remove Red Bloodline Tracker from [recipient.GetShortUINameNoTooltip]."
+ 
+ blt_remove_bloodline_orange_interaction:0 "Remove Orange Bloodline Tracker"
+ blt_remove_bloodline_orange_interaction.desc:0 "Remove Orange Bloodline Tracker from [recipient.GetShortUINameNoTooltip]."
+ 
+ blt_remove_bloodline_yellow_interaction:0 "Remove Yellow Bloodline Tracker"
+ blt_remove_bloodline_yellow_interaction.desc:0 "Remove Yellow Bloodline Tracker from [recipient.GetShortUINameNoTooltip]."
+ 
+ blt_remove_bloodline_blue_interaction:0 "Remove Blue Bloodline Tracker"
+ blt_remove_bloodline_blue_interaction.desc:0 "Remove Blue Bloodline Tracker from [recipient.GetShortUINameNoTooltip]."
+
+ blt_remove_bloodline_green_interaction:0 "Remove Green Bloodline Tracker"
+ blt_remove_bloodline_green_interaction.desc:0 "Remove Green Bloodline Tracker from [recipient.GetShortUINameNoTooltip]."
+
+ blt_remove_bloodline_cyan_interaction:0 "Remove Cyan Bloodline Tracker"
+ blt_remove_bloodline_cyan_interaction.desc:0 "Remove Cyan Bloodline Tracker from [recipient.GetShortUINameNoTooltip]."
+
+ blt_remove_bloodline_pink_interaction:0 "Remove Pink Bloodline Tracker"
+ blt_remove_bloodline_pink_interaction.desc:0 "Remove Pink Bloodline Tracker from [recipient.GetShortUINameNoTooltip]."
+
+ blt_remove_bloodline_purple_interaction:0 "Remove Purple Bloodline Tracker"
+ blt_remove_bloodline_purple_interaction.desc:0 "Remove Purple Bloodline Tracker from [recipient.GetShortUINameNoTooltip]."
+ 
+ blt_remove_bloodline_gray_interaction:0 "Remove Gray Bloodline Tracker"
+ blt_remove_bloodline_gray_interaction.desc:0 "Remove Gray Bloodline Tracker from [recipient.GetShortUINameNoTooltip]."

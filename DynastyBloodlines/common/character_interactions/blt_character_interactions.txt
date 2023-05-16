@@ -1,0 +1,791 @@
+blt_track_bloodline_red_interaction = {
+	category = interaction_category_friendly
+	desc = blt_track_bloodline_red_interaction.desc
+    interface_priority = 1
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			NOT = { has_trait = blt_red_blood}
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = blt_red_blood
+			every_child = {
+				even_if_dead = yes
+				add_trait = blt_red_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					add_trait = blt_red_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_track_bloodline_blue_interaction = {
+	category = interaction_category_friendly
+	desc = blt_track_bloodline_blue_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			NOT = { has_trait = blt_blue_blood}
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = blt_blue_blood
+			every_child = {
+				even_if_dead = yes
+				add_trait = blt_blue_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					add_trait = blt_blue_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_track_bloodline_green_interaction = {
+	category = interaction_category_friendly
+	desc = blt_track_bloodline_green_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			NOT = { has_trait = blt_green_blood}
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = blt_green_blood
+			every_child = {
+				even_if_dead = yes
+				add_trait = blt_green_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					add_trait = blt_green_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_track_bloodline_yellow_interaction = {
+	category = interaction_category_friendly
+	desc = blt_track_bloodline_yellow_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			NOT = { has_trait = blt_yellow_blood}
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = blt_yellow_blood
+			every_child = {
+				even_if_dead = yes
+				add_trait = blt_yellow_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					add_trait = blt_yellow_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_track_bloodline_orange_interaction = {
+	category = interaction_category_friendly
+	desc = blt_track_bloodline_orange_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			NOT = { has_trait = blt_orange_blood}
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = blt_orange_blood
+			every_child = {
+				even_if_dead = yes
+				add_trait = blt_orange_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					add_trait = blt_orange_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_track_bloodline_purple_interaction = {
+	category = interaction_category_friendly
+	desc = blt_track_bloodline_purple_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			NOT = { has_trait = blt_purple_blood}
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = blt_purple_blood
+			every_child = {
+				even_if_dead = yes
+				add_trait = blt_purple_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					add_trait = blt_purple_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_track_bloodline_gray_interaction = {
+	category = interaction_category_friendly
+	desc = blt_track_bloodline_gray_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			NOT = { has_trait = blt_gray_blood}
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = blt_gray_blood
+			every_child = {
+				even_if_dead = yes
+				add_trait = blt_gray_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					add_trait = blt_gray_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_track_bloodline_pink_interaction = {
+	category = interaction_category_friendly
+	desc = blt_track_bloodline_pink_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			NOT = { has_trait = blt_pink_blood}
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = blt_pink_blood
+			every_child = {
+				even_if_dead = yes
+				add_trait = blt_pink_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					add_trait = blt_pink_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_track_bloodline_cyan_interaction = {
+	category = interaction_category_friendly
+	desc = blt_track_bloodline_cyan_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			NOT = { has_trait = blt_cyan_blood}
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = blt_cyan_blood
+			every_child = {
+				even_if_dead = yes
+				add_trait = blt_cyan_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					add_trait = blt_cyan_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_remove_bloodline_cyan_interaction = {
+	category = interaction_category_friendly
+	desc = blt_remove_bloodline_cyan_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			has_trait = blt_cyan_blood
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			remove_trait = blt_cyan_blood
+			every_child = {
+				even_if_dead = yes
+				remove_trait = blt_cyan_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					remove_trait = blt_cyan_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_remove_bloodline_pink_interaction = {
+	category = interaction_category_friendly
+	desc = blt_remove_bloodline_pink_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			has_trait = blt_pink_blood
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			remove_trait = blt_pink_blood
+			every_child = {
+				even_if_dead = yes
+				remove_trait = blt_pink_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					remove_trait = blt_pink_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_remove_bloodline_gray_interaction = {
+	category = interaction_category_friendly
+	desc = blt_remove_bloodline_gray_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			has_trait = blt_gray_blood
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			remove_trait = blt_gray_blood
+			every_child = {
+				even_if_dead = yes
+				remove_trait = blt_gray_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					remove_trait = blt_gray_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_remove_bloodline_purple_interaction = {
+	category = interaction_category_friendly
+	desc = blt_remove_bloodline_purple_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			has_trait = blt_purple_blood
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			remove_trait = blt_purple_blood
+			every_child = {
+				even_if_dead = yes
+				remove_trait = blt_purple_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					remove_trait = blt_purple_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_remove_bloodline_red_interaction = {
+	category = interaction_category_friendly
+	desc = blt_remove_bloodline_red_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			has_trait = blt_red_blood
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			remove_trait = blt_red_blood
+			every_child = {
+				even_if_dead = yes
+				remove_trait = blt_red_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					remove_trait = blt_red_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_remove_bloodline_blue_interaction = {
+	category = interaction_category_friendly
+	desc = blt_remove_bloodline_blue_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			has_trait = blt_blue_blood
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			remove_trait = blt_blue_blood
+			every_child = {
+				even_if_dead = yes
+				remove_trait = blt_blue_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					remove_trait = blt_blue_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_remove_bloodline_orange_interaction = {
+	category = interaction_category_friendly
+	desc = blt_remove_bloodline_orange_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			has_trait = blt_orange_blood
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			remove_trait = blt_orange_blood
+			every_child = {
+				even_if_dead = yes
+				remove_trait = blt_orange_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					remove_trait = blt_orange_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_remove_bloodline_green_interaction = {
+	category = interaction_category_friendly
+	desc = blt_remove_bloodline_green_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			has_trait = blt_green_blood
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			remove_trait = blt_green_blood
+			every_child = {
+				even_if_dead = yes
+				remove_trait = blt_green_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					remove_trait = blt_green_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
+
+blt_remove_bloodline_yellow_interaction = {
+	category = interaction_category_friendly
+	desc = blt_remove_bloodline_yellow_interaction.desc
+    interface_priority = 1	
+	auto_accept = yes
+    use_diplomatic_range = no
+
+	is_shown = {
+		scope:actor = {
+			has_character_flag = blt_enabled
+		}
+		scope:recipient = {
+			has_trait = blt_yellow_blood
+		}
+	}
+	is_valid_showing_failures_only = {
+
+	}
+
+	on_accept = {
+		scope:recipient = {
+			remove_trait = blt_yellow_blood
+			every_child = {
+				even_if_dead = yes
+				remove_trait = blt_yellow_blood
+				every_child = {
+					even_if_dead = yes
+					limit = {
+						OR = {
+							is_grandchild_of = scope:recipient
+							is_great_grandchild_of = scope:recipient
+						}
+					}
+					remove_trait = blt_yellow_blood
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 0
+	}
+}
