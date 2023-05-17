@@ -1,4 +1,4 @@
-version="1.9.0.3"
+version="1.9.0.4"
 picture="thumbnail.png"
 tags={
 	"Character Focuses"

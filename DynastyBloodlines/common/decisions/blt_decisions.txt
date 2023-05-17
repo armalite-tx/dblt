@@ -21,7 +21,7 @@
 
 	}
 
-	ai_check_frequency = 0 # Change this value if you want the AI to consider this decision.
+	ai_check_frequency = 0 
 }
 
 blt_disable_decision = {
@@ -46,5 +46,5 @@ blt_disable_decision = {
 		remove_character_flag = blt_enabled
 	}
 
-	ai_check_frequency = 0 # Change this value if you want the AI to consider this decision.
+	ai_check_frequency = 0
 }

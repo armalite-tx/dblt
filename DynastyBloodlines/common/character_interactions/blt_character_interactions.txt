@@ -1,4 +1,4 @@
-blt_track_bloodline_red_interaction = {
+﻿blt_track_bloodline_red_interaction = {
 	category = interaction_category_friendly
 	desc = blt_track_bloodline_red_interaction.desc
     interface_priority = 1
@@ -23,19 +23,34 @@ blt_track_bloodline_red_interaction = {
 			every_child = {
 				even_if_dead = yes
 				add_trait = blt_red_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					add_trait = blt_red_blood
+						every_child = {
+							even_if_dead = yes
+							add_trait = blt_red_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								add_trait = blt_red_blood	
+							}							
 						}
 					}
-					add_trait = blt_red_blood
-				}
 			}
 		}
 	}
+
 	
 	ai_will_do = {
 		base = 0
@@ -67,16 +82,30 @@ blt_track_bloodline_blue_interaction = {
 			every_child = {
 				even_if_dead = yes
 				add_trait = blt_blue_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					add_trait = blt_blue_blood
+						every_child = {
+							even_if_dead = yes
+							add_trait = blt_blue_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								add_trait = blt_blue_blood	
+							}							
 						}
 					}
-					add_trait = blt_blue_blood
-				}
 			}
 		}
 	}
@@ -111,16 +140,30 @@ blt_track_bloodline_green_interaction = {
 			every_child = {
 				even_if_dead = yes
 				add_trait = blt_green_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					add_trait = blt_green_blood
+						every_child = {
+							even_if_dead = yes
+							add_trait = blt_green_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								add_trait = blt_green_blood	
+							}							
 						}
 					}
-					add_trait = blt_green_blood
-				}
 			}
 		}
 	}
@@ -155,16 +198,30 @@ blt_track_bloodline_yellow_interaction = {
 			every_child = {
 				even_if_dead = yes
 				add_trait = blt_yellow_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					add_trait = blt_yellow_blood
+						every_child = {
+							even_if_dead = yes
+							add_trait = blt_yellow_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								add_trait = blt_yellow_blood	
+							}							
 						}
 					}
-					add_trait = blt_yellow_blood
-				}
 			}
 		}
 	}
@@ -199,16 +256,30 @@ blt_track_bloodline_orange_interaction = {
 			every_child = {
 				even_if_dead = yes
 				add_trait = blt_orange_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					add_trait = blt_orange_blood
+						every_child = {
+							even_if_dead = yes
+							add_trait = blt_orange_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								add_trait = blt_orange_blood	
+							}							
 						}
 					}
-					add_trait = blt_orange_blood
-				}
 			}
 		}
 	}
@@ -243,16 +314,30 @@ blt_track_bloodline_purple_interaction = {
 			every_child = {
 				even_if_dead = yes
 				add_trait = blt_purple_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					add_trait = blt_purple_blood
+						every_child = {
+							even_if_dead = yes
+							add_trait = blt_purple_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								add_trait = blt_purple_blood	
+							}							
 						}
 					}
-					add_trait = blt_purple_blood
-				}
 			}
 		}
 	}
@@ -287,16 +372,30 @@ blt_track_bloodline_gray_interaction = {
 			every_child = {
 				even_if_dead = yes
 				add_trait = blt_gray_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					add_trait = blt_gray_blood
+						every_child = {
+							even_if_dead = yes
+							add_trait = blt_gray_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								add_trait = blt_gray_blood	
+							}							
 						}
 					}
-					add_trait = blt_gray_blood
-				}
 			}
 		}
 	}
@@ -331,16 +430,30 @@ blt_track_bloodline_pink_interaction = {
 			every_child = {
 				even_if_dead = yes
 				add_trait = blt_pink_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					add_trait = blt_pink_blood
+						every_child = {
+							even_if_dead = yes
+							add_trait = blt_pink_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								add_trait = blt_pink_blood	
+							}							
 						}
 					}
-					add_trait = blt_pink_blood
-				}
 			}
 		}
 	}
@@ -375,16 +488,30 @@ blt_track_bloodline_cyan_interaction = {
 			every_child = {
 				even_if_dead = yes
 				add_trait = blt_cyan_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					add_trait = blt_cyan_blood
+						every_child = {
+							even_if_dead = yes
+							add_trait = blt_cyan_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								add_trait = blt_cyan_blood	
+							}							
 						}
 					}
-					add_trait = blt_cyan_blood
-				}
 			}
 		}
 	}
@@ -419,16 +546,30 @@ blt_remove_bloodline_cyan_interaction = {
 			every_child = {
 				even_if_dead = yes
 				remove_trait = blt_cyan_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					remove_trait = blt_cyan_blood
+						every_child = {
+							even_if_dead = yes
+							remove_trait = blt_cyan_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								remove_trait = blt_cyan_blood	
+							}							
 						}
 					}
-					remove_trait = blt_cyan_blood
-				}
 			}
 		}
 	}
@@ -463,16 +604,30 @@ blt_remove_bloodline_pink_interaction = {
 			every_child = {
 				even_if_dead = yes
 				remove_trait = blt_pink_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					remove_trait = blt_pink_blood
+						every_child = {
+							even_if_dead = yes
+							remove_trait = blt_pink_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								remove_trait = blt_pink_blood	
+							}							
 						}
 					}
-					remove_trait = blt_pink_blood
-				}
 			}
 		}
 	}
@@ -507,16 +662,30 @@ blt_remove_bloodline_gray_interaction = {
 			every_child = {
 				even_if_dead = yes
 				remove_trait = blt_gray_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					remove_trait = blt_gray_blood
+						every_child = {
+							even_if_dead = yes
+							remove_trait = blt_gray_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								remove_trait = blt_gray_blood	
+							}							
 						}
 					}
-					remove_trait = blt_gray_blood
-				}
 			}
 		}
 	}
@@ -551,16 +720,30 @@ blt_remove_bloodline_purple_interaction = {
 			every_child = {
 				even_if_dead = yes
 				remove_trait = blt_purple_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					remove_trait = blt_purple_blood
+						every_child = {
+							even_if_dead = yes
+							remove_trait = blt_purple_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								remove_trait = blt_purple_blood	
+							}							
 						}
 					}
-					remove_trait = blt_purple_blood
-				}
 			}
 		}
 	}
@@ -595,16 +778,30 @@ blt_remove_bloodline_red_interaction = {
 			every_child = {
 				even_if_dead = yes
 				remove_trait = blt_red_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					remove_trait = blt_red_blood
+						every_child = {
+							even_if_dead = yes
+							remove_trait = blt_red_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								remove_trait = blt_red_blood	
+							}							
 						}
 					}
-					remove_trait = blt_red_blood
-				}
 			}
 		}
 	}
@@ -639,16 +836,30 @@ blt_remove_bloodline_blue_interaction = {
 			every_child = {
 				even_if_dead = yes
 				remove_trait = blt_blue_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					remove_trait = blt_blue_blood
+						every_child = {
+							even_if_dead = yes
+							remove_trait = blt_blue_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								remove_trait = blt_blue_blood	
+							}							
 						}
 					}
-					remove_trait = blt_blue_blood
-				}
 			}
 		}
 	}
@@ -683,16 +894,30 @@ blt_remove_bloodline_orange_interaction = {
 			every_child = {
 				even_if_dead = yes
 				remove_trait = blt_orange_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					remove_trait = blt_orange_blood
+						every_child = {
+							even_if_dead = yes
+							remove_trait = blt_orange_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								remove_trait = blt_orange_blood	
+							}							
 						}
 					}
-					remove_trait = blt_orange_blood
-				}
 			}
 		}
 	}
@@ -727,16 +952,30 @@ blt_remove_bloodline_green_interaction = {
 			every_child = {
 				even_if_dead = yes
 				remove_trait = blt_green_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					remove_trait = blt_green_blood
+						every_child = {
+							even_if_dead = yes
+							remove_trait = blt_green_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								remove_trait = blt_green_blood	
+							}							
 						}
 					}
-					remove_trait = blt_green_blood
-				}
 			}
 		}
 	}
@@ -771,16 +1010,30 @@ blt_remove_bloodline_yellow_interaction = {
 			every_child = {
 				even_if_dead = yes
 				remove_trait = blt_yellow_blood
-				every_child = {
+					every_child = {
 					even_if_dead = yes
-					limit = {
-						OR = {
-							is_grandchild_of = scope:recipient
-							is_great_grandchild_of = scope:recipient
+					remove_trait = blt_yellow_blood
+						every_child = {
+							even_if_dead = yes
+							remove_trait = blt_yellow_blood
+								every_child = {
+								even_if_dead = yes										
+									limit = {
+										OR = {
+										is_child_of = scope:recipient
+										is_grandchild_of = scope:recipient
+										is_great_grandchild_of = scope:recipient
+										any_parent = { even_if_dead = yes is_child_of = scope:recipient }
+										any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_child_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_grandchild_of = scope:recipient } }
+										any_parent = { even_if_dead = yes any_parent = { even_if_dead = yes is_great_grandchild_of = scope:recipient } }						
+										}
+									}
+								remove_trait = blt_yellow_blood	
+							}							
 						}
 					}
-					remove_trait = blt_yellow_blood
-				}
 			}
 		}
 	}

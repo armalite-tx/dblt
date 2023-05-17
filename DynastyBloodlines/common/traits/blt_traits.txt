@@ -1,4 +1,4 @@
-
+﻿
 blt_red_blood = {
 	inherit_chance = 100
 }
