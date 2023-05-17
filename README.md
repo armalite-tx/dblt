@@ -1,12 +1,12 @@
 # Dynasty Bloodline Tracker (dblt)
 The Dynasty Bloodline Tracker allows you to set an inheritable blood trait where you can visually separate and track given bloodline(s) across any dynasty.
-Characters can also inherite multiple bloodline traits across the dynasties.
-With the recent 1.9.0.3 release. Functionality has been added into the portraits page for better tracking capabilities with larger dynasties. Currently there are 9 original bloodlines. Mathematically this can scale quite well depending on your use case. If more are needed please let me know in discussion tab. Thanks for reviewing the mod.
+Characters can also inherit multiple bloodline traits across the dynasties.
+With the recent 1.9.0.3 release. Functionality has been added into the portraits page for better tracking capabilities with larger dynasties. Currently there are 9 original bloodlines. This can scale quite well depending on your use case. If more are needed please let me know in discussion tab. Thanks for reviewing the mod.
 
 #Mechanics#
 Enablement and disablement can be done in the decisions menu.
 Addition and removal of bloodlines can be done through the 'friendly interaction' menu.
-The chosen bloodline will be applied to the character and all children to grandchild level.
+The chosen bloodline will be applied and or removed to the character and all children up to 5 descendants in the tree.
 The bloodline trait is 100% inheritable unless removed.
 
 #Compatibility#
